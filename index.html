@@ -30,9 +30,74 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="jumbotron">
+    <div class="jumbotron">
+        <div class="container">
             <h1>Star Wars RPG</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="assets/images/luke-skywalker.png" alt="Luke Skywalker" class="img-responsive" id="luke">
+                    <div class="caption">
+                        <h3>Luke Skywalker</h3>
+                        <p><strong>Attack:</strong> 180</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="assets/images/obi-wan.jpg" alt="Obi-Wan" class="img-responsive" id="obi-wan">
+                    <div class="caption">
+                        <h3>Obi-Wan Kenobi</h3>
+                        <p><strong>Attack:</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="assets/images/darth-sidious.jpg" alt="Darth Sidious" class="img-responsive" id="sidious">
+                    <div class="caption">
+                        <h3>Darth Sidious</h3>
+                        <p><strong>Attack:</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="assets/images/darth-vader.jpg" alt="Dart Vader" class="img-responsive" id="vader">
+                    <div class="caption">
+                        <h3>Darth Vader</h3>
+                        <p><strong>Attack:</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <div class="page-header">
+                    <h1>Attacker</h1>
+                </div>
+                <div id="attacker"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="page-header">
+                    <h1>Defender</h1>
+                </div>
+                <div id="defender"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <button class="btn btn-default">Ready</button>
+                <button class="btn btn-success" disabled="disabled">Attack</button>
+                <button class="btn btn-primary" disabled="disabled">Start Over</button>
+            </div>
         </div>
     </div>
 
