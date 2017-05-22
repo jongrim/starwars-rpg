@@ -25,6 +25,8 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="assets/js/app.js"></script>
 
 
 </head>
@@ -38,53 +40,61 @@
 
     <div class="container-fluid">
         
-        <div class="row">
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="assets/images/luke-skywalker.png" alt="Luke Skywalker" class="img-responsive" id="luke">
+        <div class="row" id="characterRow">
+            <div class="col-sm-3">
+                <div class="thumbnail character" id="luke" data-attack=7 data-counterattack=5 data-health=120>
+                    <img src="assets/images/luke-skywalker.png" alt="Luke Skywalker" class="img-responsive">
                     <div class="caption">
                         <h3>Luke Skywalker</h3>
-                        <p><strong>Attack:</strong> 180</p>
+                        <p><strong>Attack:</strong> <span class="attack">7</span></p>
+                        <p><strong>Counter-Attack:</strong> 5</p>
+                        <p><strong>Health:</strong> <span class="health">120</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="assets/images/obi-wan.jpg" alt="Obi-Wan" class="img-responsive" id="obi-wan">
+            <div class="col-sm-3">
+                <div class="thumbnail character" id="obi-wan" data-attack=8 data-counterattack=10 data-health=100>
+                    <img src="assets/images/obi-wan.jpg" alt="Obi-Wan" class="img-responsive">
                     <div class="caption">
                         <h3>Obi-Wan Kenobi</h3>
-                        <p><strong>Attack:</strong></p>
+                        <p><strong>Attack:</strong> <span class="attack">8</span></p>
+                        <p><strong>Counter-Attack:</strong> 10</p>
+                        <p><strong>Health:</strong><span class="health">100</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="assets/images/darth-sidious.jpg" alt="Darth Sidious" class="img-responsive" id="sidious">
+            <div class="col-sm-3">
+                <div class="thumbnail character" id="sidious" data-attack=3 data-counterattack=15 data-health=150>
+                    <img src="assets/images/darth-sidious.jpg" alt="Darth Sidious" class="img-responsive">
                     <div class="caption">
                         <h3>Darth Sidious</h3>
-                        <p><strong>Attack:</strong></p>
+                        <p><strong>Attack:</strong> <span class="attack">5</span></p>
+                        <p><strong>Counter-Attack:</strong> 15</p>
+                        <p><strong>Health:</strong><span class="health">150</span></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <img src="assets/images/darth-vader.jpg" alt="Dart Vader" class="img-responsive" id="vader">
+            <div class="col-sm-3">
+                <div class="thumbnail character" id="vader" data-attack=12 data-counterattack=12 data-health=90>
+                    <img src="assets/images/darth-vader.jpg" alt="Dart Vader" class="img-responsive">
                     <div class="caption">
                         <h3>Darth Vader</h3>
-                        <p><strong>Attack:</strong></p>
+                        <p><strong>Attack:</strong> <span class="attack">12</span></p>
+                        <p><strong>Counter-Attack:</strong> 12</p>
+                        <p><strong>Health:</strong><span class="health">90</span></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-3 col-md-offset-3">
+            <div class="col-sm-3 col-sm-offset-3">
                 <div class="page-header">
                     <h1>Attacker</h1>
                 </div>
                 <div id="attacker"></div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 <div class="page-header">
                     <h1>Defender</h1>
                 </div>
@@ -94,9 +104,9 @@
 
         <div class="row">
             <div class="col-xs-12 text-center">
-                <button class="btn btn-default">Ready</button>
-                <button class="btn btn-success" disabled="disabled">Attack</button>
-                <button class="btn btn-primary" disabled="disabled">Start Over</button>
+                <!--<button class="btn btn-default" id="rdy-btn">Ready</button>-->
+                <button class="btn btn-success" disabled="disabled" id="atk-btn">Attack</button>
+                <!--<button class="btn btn-primary" disabled="disabled" id="reset-btn">Start Over</button>-->
             </div>
         </div>
     </div>
