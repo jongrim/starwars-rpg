@@ -1,3 +1,26 @@
-html {
-  margin-bottom: 2em;
+body {
+  background: black;
+}
+
+#characterContainer {
+  background-image: url("../images/deathstar.jpg");
+  background-size: cover;
+  background-position: top;
+  min-height: 80vh;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.0);
+  color: #eeeeee;
+}
+
+#battleContainer {
+  background-image: url("../images/xwings.jpg");
+  background-size: cover;
+  background-position: 50%;
+  min-height: 100vh;
+}
+
+#attacker, #defender {
+  min-height: 425px;
 }

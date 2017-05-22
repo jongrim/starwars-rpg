@@ -1,10 +1,6 @@
 // @ts-check
 
 $(document).ready(function () {
-  const luke = $("#luke");
-  const obiWan = $("#obi-wan");
-  const sidious = $("#sidious");
-  const vader = $("#vader");
 
   let attackerDiv = $("#attacker");
   let defenderDiv = $("#defender");
@@ -93,10 +89,6 @@ $(document).ready(function () {
     div.find(".health").text(() => {
       return obj.health > 0 ? obj.health : 0;
     });
-  }
-
-  function reset() {
-
   }
 
   function endGame(success) {
