@@ -9,7 +9,6 @@ $(document).ready(function () {
   let defender = null;
 
   const attackButton = $("#atk-btn");
-  const resetButton = $("#reset-btn");
 
   attackButton.click(attack);
   // resetButton.click(reset);
