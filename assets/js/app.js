@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   
   function allowCharacterSelection() {
-    $(".character").on("click", function () {
+    $(".character").on("click", function (event) {
       $(`#${this.id}`).remove();
       addCharacterToBattle(event);
     });
