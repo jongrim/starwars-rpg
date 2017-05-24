@@ -12,7 +12,7 @@ $(document).ready(function () {
   const resetButton = $("#reset-btn");
 
   attackButton.click(attack);
-  resetButton.click(reset);
+  // resetButton.click(reset);
 
   
   function allowCharacterSelection() {
